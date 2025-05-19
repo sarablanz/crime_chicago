@@ -1,0 +1,43 @@
+
+
+## Resumen Exploratorio de Datos (EDA)  
+**Base de datos:** Crímenes en Chicago (más de 8 millones de registros, 2001-2025)
+
+### 1. **Carga y limpieza de datos**
+- Se importaron los datos y se revisó la estructura y tipos de variables.
+- Se eliminaron duplicados y se imputaron valores nulos:
+  - Variables categóricas (`location_description`, `ward`, `community_area`) se imputaron con la moda.
+  - Variables numéricas y geográficas (`x_coordinate`, `y_coordinate`, `latitude`, `longitude`) se imputaron con la mediana.
+  - Se eliminaron registros con nulos en variables clave como `district`.
+- Se estandarizaron los nombres de columnas a formato snake_case para facilitar el análisis.
+
+### 2. **Análisis univariable**
+- Se identificaron y separaron variables numéricas, categóricas y booleanas.
+- Se analizaron las frecuencias de las principales categorías (por ejemplo, tipo de crimen, descripción de ubicación).
+- Se graficó la distribución de variables numéricas (histogramas) y se calcularon estadísticas descriptivas (media, mediana, percentiles, etc.).
+
+### 3. **Detección de valores atípicos**
+- Se realizaron boxplots para todas las variables numéricas, identificando posibles outliers en coordenadas y otras variables.
+
+### 4. **Correlación entre variables**
+- Se calculó y visualizó la matriz de correlación entre variables numéricas, observando relaciones relevantes para el análisis posterior.
+
+### 5. **Análisis de variables booleanas**
+- Se analizaron variables como `arrest` y `domestic` en relación con el año y otros factores, usando gráficos de violín.
+
+### 6. **Análisis de variables categóricas**
+- Se graficaron las frecuencias de las principales categorías para entender la concentración de ciertos tipos de crímenes y ubicaciones.
+
+### 7. **Cruce de variables**
+- Se realizaron tablas de contingencia y gráficos apilados para analizar la relación entre tipo de crimen y distrito.
+
+### 8. **Análisis temporal**
+- Se graficó la evolución de los crímenes por año, identificando tendencias y posibles patrones temporales.
+
+### 9. **Análisis geoespacial**
+- Se realizó un mapa de calor de la densidad de crímenes en la ciudad usando las coordenadas geográficas.
+
+---
+
+**Conclusión:**  
+El EDA ha permitido limpiar y estructurar la base de datos, identificar patrones generales y preparar el terreno para análisis más avanzados. Se detectaron variables y relaciones clave que pueden ser útiles para estrategias de prevención y análisis de seguridad.

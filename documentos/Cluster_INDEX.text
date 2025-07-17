@@ -1,1 +1,27 @@
+**Resumen del Notebook: 2_Cluster_INDEX.ipynb**
 
+Este notebook aborda el análisis de delitos índice (Index Crimes) en la ciudad de Chicago, utilizando la base de datos de crímenes del Chicago Police Department y el sistema IUCR (Illinois Uniform Crime Reporting). El objetivo principal es identificar patrones y características espaciales y cuantitativas de los delitos más graves y frecuentes.
+
+*1. Carga y exploración de datos*
+
+Se utiliza un dataset procesado (df_EDA.pkl) con más de 8 millones de registros y 23 columnas relacionadas con eventos delictivos (tipo de crimen, ubicación, fecha, arresto, etc.).
+Se realiza una exploración inicial para conocer tipos de variables, distribución y valores relevantes.
+
+*2. Identificación de delitos índice*
+Se seleccionan los delitos índice más graves y frecuentes según el sistema IUCR: HOMICIDE, CRIMINAL SEXUAL ASSAULT, ROBBERY, AGGRAVATED ASSAULT, AGGRAVATED BATTERY, BURGLARY, THEFT, MOTOR VEHICLE THEFT y ARSON.
+Se crea un subconjunto del dataframe (df_index) con estos delitos para análisis específico.
+
+*3. Análisis de arrestos*
+Se calcula el porcentaje de arrestos para cada tipo de delito índice.
+El ratio de arresto varía entre delitos, siendo mayor en homicidios (~47%) y menor en delitos contra la propiedad como robo o hurto (<10%).
+
+*4. Análisis espacial*
+Se identifica la ubicación más frecuente de cada tipo de delito (por ejemplo, los homicidios ocurren principalmente en la calle).
+Se calcula la moda de la columna location_description y las coordenadas promedio (latitude, longitude) para cada tipo de delito y lugar, permitiendo visualizar espacialmente los puntos calientes de criminalidad.
+
+*5. Visualización*
+Se prepara la información para su representación en mapas, facilitando el análisis geoespacial y la toma de decisiones basada en patrones de ubicación.
+
+*6. Colaboración*
+El análisis del sistema IUCR fue desarrollado en colaboración con Baudilio Marquez, especialista en el reporte uniforme de crímenes.
+Este notebook proporciona una base sólida para el análisis avanzado y la visualización de la criminalidad en Chicago, facilitando la comprensión de los delitos más graves y sus patrones espaciales.

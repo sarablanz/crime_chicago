@@ -5,3 +5,6 @@ data/crime_chicago.csv
 data\df_EDA.pkl
 data/df_EDA.pkl
 desastre/
+# Ignorar carpetas duplicadas e innecesarias
+datos/
+**/desastre/

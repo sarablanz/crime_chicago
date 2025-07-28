@@ -8,3 +8,4 @@ desastre/
 # Ignorar carpetas duplicadas e innecesarias
 datos/
 **/desastre/
+datos/

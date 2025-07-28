@@ -4,3 +4,4 @@ data/crime_chicago.csv
 *.pkl
 data\df_EDA.pkl
 data/df_EDA.pkl
+desastre/
